@@ -31,4 +31,21 @@ ps [options]：
           ps -eLf
           ps axms
 
+### 2、kill指令
+
+  kill [options] <pid>  ：列出一些常用的
+       
+       HUP     1    终端断线
+
+       INT     2    中断（同 Ctrl + C）
+
+       QUIT    3    退出（同 Ctrl + ）
+
+       TERM    15    终止
+
+       KILL    9    强迫终止
+
+       CONT    18    持续（与STOP相反， fg/bg号令）
+
+       STOP    19    暂停（同 Ctrl + Z）
 
