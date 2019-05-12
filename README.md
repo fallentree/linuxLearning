@@ -49,3 +49,24 @@ ps [options]：
 
        STOP    19    暂停（同 Ctrl + Z）
 
+### 3、ufw（ubuntu firework），参考：https://blog.csdn.net/bigdata_mining/article/details/80699180
+
+linux原始自带防火墙工具iptables，由于过于繁琐，所以ubuntu系统默认提供了一个基于iptable的防火墙工具ufw。
+
+       启用：
+       
+       sudo ufw enable
+       
+       sudo ufw default deny
+       
+运行以上两条命令后，开启了防火墙，并在系统启动时自动开启。关闭所有外部对本机的访问，但本机访问外部正常。
+
+       开启/禁用（端口）：
+       
+       sudo ufw allow|deny ［service］
+       
+       如：sudo ufw allow 53  或者  sudo ufw deny smtp
+       
+       查看防火墙状态：
+       
+       sudo ufw status
